@@ -45,20 +45,20 @@ List<TabItem> getTopItems(BuildContext context) {
   return [
     TabItem(
         index: 0,
-        tab: Tab(text: FsLocalizations.getLocale(context).video),
-        screen: VideosScreen()),
-    TabItem(
-        index: 1,
         tab: Tab(text: FsLocalizations.getLocale(context).plugin),
         screen: PluginsScreen()),
     TabItem(
-        index: 2,
+        index: 1,
         tab: Tab(text: FsLocalizations.getLocale(context).blog),
         screen: BlogScreen()),
     TabItem(
-        index: 3,
+        index: 2,
         tab: Tab(text: FsLocalizations.getLocale(context).openSource),
         screen: ProjectsScreen()),
+    TabItem(
+        index: 3,
+        tab: Tab(text: FsLocalizations.getLocale(context).video),
+        screen: VideosScreen()),
 //    TabItem(
 //        index: 4,
 //        tab: Tab(text: FsLocalizations.getLocale(context).tool),
