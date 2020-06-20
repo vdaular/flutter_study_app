@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_github_api/flutter_github_api.dart';
 import 'package:flutter_study_app/model/app_model.dart';
-import 'package:scoped_model/scoped_model.dart';
+import 'package:provider/provider.dart';
 
 enum LocaleEnum { cn, en, ja }
 
@@ -23,8 +23,8 @@ class CommonUtil {
     ];
   }
 
-  static AppModel getModel(BuildContext context) {
-    return ScopedModel.of<AppModel>(context);
+  static AppModel getModel(BuildContext context, {listen = false}) {
+    return Provider.of<AppModel>(context, listen: listen);
   }
 
   static format(String content, {String param, List<String> params}) {

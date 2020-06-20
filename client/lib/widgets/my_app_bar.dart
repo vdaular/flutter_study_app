@@ -10,9 +10,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        elevation: 0,
-        bottom: tabBar,
-        title: Text(title == null ? '' : title));
+        elevation: 0, bottom: tabBar, title: Text(title == null ? '' : title));
   }
 
   @override

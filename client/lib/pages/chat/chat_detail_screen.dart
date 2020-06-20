@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:flutter_study_app/components/loading.dart';
-import 'package:flutter_study_app/components/no_data.dart';
-import 'package:flutter_study_app/components/return_bar.dart';
+import 'package:flutter_study_app/widgets/loading.dart';
+import 'package:flutter_study_app/widgets/no_data.dart';
+import 'package:flutter_study_app/widgets/return_bar.dart';
 import 'package:flutter_study_app/factory.dart';
 import 'package:flutter_study_app/i18n/fs_localization.dart';
 import 'package:flutter_study_app/model/app_model.dart';
@@ -13,7 +13,6 @@ import 'package:flutter_study_app/utils/index.dart';
 import 'package:flutter_study_app/utils/time_util.dart';
 import 'package:flutter_study_app/vo/bottom_item_vo.dart';
 import 'package:github/server.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 class ChatDetailScreen extends StatefulWidget {
   ChatDetailScreen(this.post);
@@ -53,28 +52,25 @@ class ChatDetailState extends State<ChatDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return ScopedModelDescendant<AppModel>(
-      builder: (context, child, model) {
-        return Scaffold(
-            appBar: ReturnBar(FsLocalizations.getLocale(context).chatContent),
-            bottomNavigationBar: _buildBottomBar(),
-            body: GestureDetector(
-                onHorizontalDragEnd: (DragEndDetails details) {
-                  NavigatorUtil.back(context, details);
-                },
-                child: ListView(
-                  shrinkWrap: true,
-                  controller: _scrollController,
-                  children: [
-                    _buildPostContent(),
-                    // 评论列表
-                    _buildComments(),
-                    // 评论框
-                    _buildCommentInput(model, post)
-                  ],
-                )));
-      },
-    );
+    AppModel model = CommonUtil.getModel(context);
+    return Scaffold(
+        appBar: ReturnBar(FsLocalizations.getLocale(context).chatContent),
+        bottomNavigationBar: _buildBottomBar(),
+        body: GestureDetector(
+            onHorizontalDragEnd: (DragEndDetails details) {
+              NavigatorUtil.back(context, details);
+            },
+            child: ListView(
+              shrinkWrap: true,
+              controller: _scrollController,
+              children: [
+                _buildPostContent(),
+                // 评论列表
+                _buildComments(),
+                // 评论框
+                _buildCommentInput(model, post)
+              ],
+            )));
   }
 
   /// 获取评论列表

@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_github_api/flutter_github_api.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
-import 'package:flutter_study_app/components/loading.dart';
-import 'package:flutter_study_app/components/no_data.dart';
+import 'package:flutter_study_app/widgets/loading.dart';
+import 'package:flutter_study_app/widgets/no_data.dart';
 import 'package:flutter_study_app/factory.dart';
 import 'package:flutter_study_app/i18n/fs_localization.dart';
 import 'package:flutter_study_app/model/app_model.dart';
 import 'package:flutter_study_app/pages/chat/chat_detail_screen.dart';
 import 'package:flutter_study_app/pages/chat/new_chat_screen.dart';
 import 'package:flutter_study_app/utils/index.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 class ChatScreen extends StatelessWidget {
   final ChatStyle style = ConfigFactory.chatStyle();
@@ -18,15 +17,10 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     AppModel model = CommonUtil.getModel(context);
     model.updatePosts(context);
-    return ScopedModelDescendant<AppModel>(
-      builder: (context, child, model) {
-        return Scaffold(
-            appBar:
-                AppBar(title: Text(FsLocalizations.getLocale(context).chat)),
-            floatingActionButton: _buildNewChatButton(context),
-            body: _buildBody(context, model));
-      },
-    );
+    return Scaffold(
+        appBar: AppBar(title: Text(FsLocalizations.getLocale(context).chat)),
+        floatingActionButton: _buildNewChatButton(context),
+        body: _buildBody(context, model));
   }
 
   /// new chat button

@@ -7,7 +7,6 @@ import 'package:flutter_study_app/service/http_service.dart';
 import 'package:flutter_study_app/service/local_storage.dart';
 import 'package:flutter_study_app/utils/index.dart';
 import 'package:flutter_study_app/utils/tip_util.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -49,39 +48,36 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return ScopedModelDescendant<AppModel>(
-      builder: (context, child, model) {
-        return GestureDetector(
-          onHorizontalDragEnd: (DragEndDetails details) {
-            NavigatorUtil.back(context, details);
-          },
-          child: Scaffold(
-            body: Container(
-              height: MediaQuery.of(context).size.height,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      colorFilter: ColorFilter.mode(
-                          Theme.of(context).primaryColor, BlendMode.screen),
-                      image: AssetImage(Constant.loginBg),
-                      fit: BoxFit.cover)),
-              padding: EdgeInsets.all(50),
-              child: Form(
-                key: formKey,
-                // 弹出键盘不遮挡内容
-                child: SingleChildScrollView(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: buildTitle() +
-                        buildInputs() +
-                        buildSubmitButtons(model) +
-                        buildBottom(),
-                  ),
-                ),
+    AppModel model = CommonUtil.getModel(context);
+    return GestureDetector(
+      onHorizontalDragEnd: (DragEndDetails details) {
+        NavigatorUtil.back(context, details);
+      },
+      child: Scaffold(
+        body: Container(
+          height: MediaQuery.of(context).size.height,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  colorFilter: ColorFilter.mode(
+                      Theme.of(context).primaryColor, BlendMode.screen),
+                  image: AssetImage(Constant.loginBg),
+                  fit: BoxFit.cover)),
+          padding: EdgeInsets.all(50),
+          child: Form(
+            key: formKey,
+            // 弹出键盘不遮挡内容
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: buildTitle() +
+                    buildInputs() +
+                    buildSubmitButtons(model) +
+                    buildBottom(),
               ),
             ),
           ),
-        );
-      },
+        ),
+      ),
     );
   }
 

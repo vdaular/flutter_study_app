@@ -15,9 +15,8 @@ class FsLocalizations {
     'ja': FsStringJP()
   };
 
-
   /// 获得支持语言的keys
-    static get supportedLocales{
+  static get supportedLocales {
     return _localizationMap.keys;
   }
 
@@ -32,5 +31,4 @@ class FsLocalizations {
     }
     return _localizationMap['cn'];
   }
-
 }

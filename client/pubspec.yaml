@@ -43,7 +43,7 @@ dependencies:
   # 大量的icon图标
   font_awesome_flutter: any
   # state管理工具
-  scoped_model: any
+  provider: ^4.0.5+1
   # 时间格式化
   intl: any
   # 生成唯一不重复id

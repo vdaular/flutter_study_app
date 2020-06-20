@@ -11,7 +11,6 @@ import 'package:flutter_study_app/service/http_service.dart';
 import 'package:flutter_study_app/service/local_storage.dart';
 import 'package:flutter_study_app/utils/common_util.dart';
 import 'package:flutter_study_app/vo/bottom_item_vo.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 /// FsApp = (flutter study app)
 class FsApp extends StatefulWidget {
@@ -36,14 +35,9 @@ class _FsAppState extends State<FsApp> {
 
   @override
   Widget build(BuildContext context) {
-    return ScopedModelDescendant<AppModel>(
-      builder: (context, child, model) {
-        return Scaffold(
-//          drawer: LeftDrawer(), // 侧边栏
-          body: tabs[_currentIndex],
-          bottomNavigationBar: _buildBottomBar(),
-        );
-      },
+    return Scaffold(
+      body: tabs[_currentIndex],
+      bottomNavigationBar: _buildBottomBar(),
     );
   }
 
@@ -100,7 +94,7 @@ class _FsAppState extends State<FsApp> {
     OauthResult result = await HttpService.login(username, password);
     if (result.data != null) {
       AppModel model = CommonUtil.getModel(context);
-      model.afterLogin(context,result.data);
+      model.afterLogin(context, result.data);
     }
   }
 }

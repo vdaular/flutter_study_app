@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study_app/components/return_bar.dart';
+import 'package:flutter_study_app/widgets/return_bar.dart';
 import 'package:flutter_study_app/i18n/fs_localization.dart';
 import 'package:flutter_study_app/utils/index.dart';
 

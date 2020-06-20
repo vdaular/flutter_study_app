@@ -1,23 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_study_app/components/loading.dart';
-import 'package:flutter_study_app/components/no_data.dart';
+import 'package:flutter_study_app/widgets/loading.dart';
+import 'package:flutter_study_app/widgets/no_data.dart';
 import 'package:flutter_study_app/factory.dart';
 import 'package:flutter_study_app/model/app_model.dart';
 import 'package:flutter_study_app/utils/index.dart';
 import 'package:flutter_study_app/vo/video_vo.dart';
-import 'package:scoped_model/scoped_model.dart';
 
-class VideosScreen extends StatelessWidget {
+class VideosScreen extends StatefulWidget {
+  @override
+  _VideosScreenState createState() => _VideosScreenState();
+}
+
+class _VideosScreenState extends State<VideosScreen> {
   final VideoStyle style = ConfigFactory.videoStyle();
 
   @override
+  void initState() {
+    super.initState();
+    AppModel model = CommonUtil.getModel(context);
+    model.updatePosts(context);
+    model.checkAdmin(context);
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return ScopedModelDescendant<AppModel>(
-      builder: (context, child, model) {
-        model.updateVideos(context);
-        return _buildBody(context, model);
-      },
-    );
+    AppModel model = CommonUtil.getModel(context);
+    return _buildBody(context, model);
   }
 
   Widget _buildBody(BuildContext context, AppModel model) {

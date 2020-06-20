@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_study_app/components/loading.dart';
+import 'package:flutter_study_app/widgets/loading.dart';
 import 'package:flutter_study_app/i18n/fs_localization.dart';
 import 'package:flutter_study_app/model/app_model.dart';
 import 'package:flutter_study_app/service/http_service.dart';

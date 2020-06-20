@@ -6,10 +6,6 @@ class ResponseInterceptors extends InterceptorsWrapper {
   onResponse(Response response) async {
     RequestOptions option = response.request;
     try {
-      if (option.contentType != null &&
-          option.contentType.primaryType == "text") {
-        return ResultData(response.data, true, Code.SUCCESS);
-      }
       if (response.statusCode == 200 || response.statusCode == 201) {
         return ResultData(response.data, true, Code.SUCCESS,
             headers: response.headers);

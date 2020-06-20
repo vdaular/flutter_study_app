@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:flutter_study_app/components/my_app_bar.dart';
+import 'package:flutter_study_app/model/app_model.dart';
+import 'package:flutter_study_app/utils/common_util.dart';
+import 'package:flutter_study_app/widgets/my_app_bar.dart';
 import 'package:flutter_study_app/factory.dart';
 import 'package:flutter_study_app/i18n/fs_localization.dart';
 import 'package:flutter_study_app/vo/bottom_item_vo.dart';
@@ -12,6 +14,13 @@ class HomeScreen extends StatefulWidget {
 class HomeScreenState extends State<HomeScreen>
     with AutomaticKeepAliveClientMixin {
   final HomeStyle style = ConfigFactory.homeStyle();
+
+  @override
+  void initState() {
+    super.initState();
+    AppModel model = CommonUtil.getModel(context);
+    model.updatePosts(context);
+  }
 
   @override
   Widget build(BuildContext context) {

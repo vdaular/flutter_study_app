@@ -7,27 +7,23 @@ import 'package:flutter_study_app/model/app_model.dart';
 import 'package:flutter_study_app/service/local_storage.dart';
 import 'package:flutter_study_app/utils/index.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:scoped_model/scoped_model.dart';
 
 class SettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScopedModelDescendant<AppModel>(
-      builder: (context, child, model) {
-        return Scaffold(
-            appBar: AppBar(
-                title: Text(FsLocalizations.getLocale(context).settings)),
-            body: Column(
-              children: <Widget>[
-                _buildInfo(context, model),
-                Expanded(
-                    child: ListView(
-                  children: _buildDrawItems(context, model),
-                ))
-              ],
-            ));
-      },
-    );
+    AppModel model = CommonUtil.getModel(context);
+    return Scaffold(
+        appBar:
+            AppBar(title: Text(FsLocalizations.getLocale(context).settings)),
+        body: Column(
+          children: <Widget>[
+            _buildInfo(context, model),
+            Expanded(
+                child: ListView(
+              children: _buildDrawItems(context, model),
+            ))
+          ],
+        ));
   }
 
   /// 退出登录

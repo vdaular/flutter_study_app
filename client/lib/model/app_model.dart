@@ -5,9 +5,8 @@ import 'package:flutter_study_app/service/http_service.dart';
 import 'package:flutter_study_app/service/local_storage.dart';
 import 'package:flutter_study_app/utils/common_util.dart';
 import 'package:flutter_study_app/vo/video_vo.dart';
-import 'package:scoped_model/scoped_model.dart';
 
-class AppModel extends Model {
+class AppModel with ChangeNotifier {
   /// 当前用户
   User user;
 
