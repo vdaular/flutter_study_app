@@ -23,53 +23,47 @@ dependencies:
     sdk: flutter
 
   # ios风格的图标
-  cupertino_icons: any
+  cupertino_icons: ^1.0.0
   # 视频播放器
-  video_player: any
+  video_player: ^0.10.12+4
   # 设备信息
-  device_info: any
-  # 轻量数据库
-  sqflite: any
+  device_info: ^0.4.2+8
   # 网络图片缓存
-  cached_network_image: any
+  cached_network_image: ^2.3.2+1
   # http请求库,代替http
-  dio: any
+  dio: ^3.0.10
   # json注解库
-  json_annotation: any
+  json_annotation: ^3.1.0
   # 缓存
-  shared_preferences: any
+  shared_preferences: ^0.5.12
   # 二维码扫描
-  qr_flutter: any
+  qr_flutter: ^3.2.0
   # 大量的icon图标
-  font_awesome_flutter: any
+  font_awesome_flutter: ^8.8.1
   # state管理工具
-  provider: ^4.0.5+1
+  provider: ^4.3.2+2
   # 时间格式化
-  intl: any
+  intl: ^0.16.1
   # 生成唯一不重复id
-  uuid: any
+  uuid: ^2.2.2
   # 异步处理
   rxdart: any
   # 手机网络状态监控 是wifi还是流量 wifi,mobile
-  connectivity: any
+  connectivity: ^0.4.9+3
   #加密库
-  encrypt: any
+  encrypt: ^4.0.3
   # 相机和相册
-  image_picker: any
+  image_picker: ^0.6.7+11
   # 查找文件的位置
-  path_provider: any
-  # google地图
-  google_maps_flutter: any
+  path_provider: ^1.6.18
   # app之间跳转
-  url_launcher: any
+  url_launcher: ^5.7.2
   # 内置web view
-  webview_flutter: any
+  webview_flutter: ^0.3.24
   # markdown支持
-  flutter_markdown: any
+  flutter_markdown: ^0.4.4
   # github库
-  flutter_github_api: any
-  # markdown editor
-  zefyr:
+  flutter_github_api: ^0.2.1+2
 
 dev_dependencies:
   flutter_test:
@@ -91,11 +85,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/avatar.png
-    - assets/images/splash.png
-    - assets/images/default_avatar.png
-    - assets/images/accountBg.jpg
-    - assets/images/login_bg.jpg
+    - assets/images/
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

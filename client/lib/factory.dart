@@ -1,12 +1,11 @@
 import 'package:flutter_study_app/app.dart';
 import 'package:flutter_study_app/pages/chat/chat_detail_screen.dart';
-import 'package:flutter_study_app/pages/chat/new_chat_screen.dart';
 import 'package:flutter_study_app/pages/chat/chat_screen.dart';
 import 'package:flutter_study_app/pages/home/blog_screen.dart';
+import 'package:flutter_study_app/pages/home/home_screen.dart';
 import 'package:flutter_study_app/pages/home/plugins_screen.dart';
 import 'package:flutter_study_app/pages/home/project_screen.dart';
 import 'package:flutter_study_app/pages/home/video_screen.dart';
-import 'package:flutter_study_app/pages/home/home_screen.dart';
 import 'package:flutter_study_app/pages/mine/login_screen.dart';
 import 'package:flutter_study_app/pages/practise/practise_screen.dart';
 import 'package:flutter_study_app/pages/tools/tools_screen.dart';
@@ -43,11 +42,6 @@ class ConfigFactory {
   // 聊天详情样式
   static ChatDetailStyle chatDetailStyle() {
     return ChatDetailStyle();
-  }
-
-  // 发表帖子的样式
-  static NewChatStyle newChatStyle() {
-    return NewChatStyle();
   }
 
   // 首页视频tab样式

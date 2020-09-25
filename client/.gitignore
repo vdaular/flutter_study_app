@@ -16,7 +16,6 @@
 *.iws
 .idea/
 generated
-auth_config.dart
 *.pem
 .settings
 .classpath
