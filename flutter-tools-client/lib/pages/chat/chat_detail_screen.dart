@@ -12,7 +12,7 @@ import 'package:flutter_study_app/service/validators.dart';
 import 'package:flutter_study_app/utils/index.dart';
 import 'package:flutter_study_app/utils/time_util.dart';
 import 'package:flutter_study_app/vo/bottom_item_vo.dart';
-import 'package:github/server.dart';
+import 'package:github/flutter-tools-server.dart';
 
 class ChatDetailScreen extends StatefulWidget {
   ChatDetailScreen(this.post);

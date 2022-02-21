@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:github/server.dart';
+import 'package:github/flutter-tools-server.dart';
 
 abstract class BaseAuth {
   Future<String> signIn(String email, String password) {

@@ -9,7 +9,7 @@ jobs:
     docker:
       - image: circleci/node:12
 
-    working_directory: ~/admin
+    working_directory: ~/flutter-tools-admin
 
     steps:
       - checkout

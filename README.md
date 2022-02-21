@@ -1,8 +1,8 @@
 
-### Flutter study app  
-:rocket: this project is build with flutter 1.9.2, an useful app(android and ios) for study flutter. it also offered a lot of useful tools for us.
+### Flutter Tools  
+:rocket: this project is build with flutter2, an useful app(android and ios) for study flutter. it also offered a lot of useful tools for us.
 
-### status
+### Status
 developing, coming soon. please be hope    
 
 [![Build Status](https://travis-ci.com/houko/flutter-study-app.svg?branch=master)](https://travis-ci.com/houko/flutter-study-app)
@@ -15,10 +15,10 @@ developing, coming soon. please be hope
 there will put a gif or video about this app while app developed
 
 ### Comment
-- admin(build with vue typescript)
-- client(build with flutter 1.9)
-- server(build with python django)
-- docs (build with docsify)
+- flutter-tools-admin(build with react typescript)
+- client(build with flutter)
+- server(build with golang)
+- docs (build with vuepress)
 
 ### Preview
 :rocket:
@@ -26,4 +26,4 @@ there will put some screen shots about this app while app developed
 
 
 ### More
-detail description please visit [document](https://flutterstudy.xiaomo.info)
+detail description please visit [document](https://tools.xiaomo.info)

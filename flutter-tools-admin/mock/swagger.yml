@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  description: Mock API for admin.
+  description: Mock API for flutter-tools-admin.
   version: 1.0.0
   title: Mock API
   contact:
@@ -549,7 +549,7 @@ paths:
                     properties:
                       accessToken:
                         type: string
-                        example: admin-token
+                        example: flutter-tools-admin-token
         400:
           $ref: '#/components/responses/InvalidUser'
   /users/logout:
@@ -865,10 +865,10 @@ components:
       properties:
         key:
           type: string
-          example: admin
+          example: flutter-tools-admin
         name:
           type: string
-          example: admin
+          example: flutter-tools-admin
         description:
           type: string
           example: Super Administrator. Have access to view all pages.
