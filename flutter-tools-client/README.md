@@ -1,25 +1,16 @@
+# flutter_tools
 
-### Flutter study app  
-:rocket: this project is build with flutter 1.9.2, an useful app(android and ios) for study flutter. it also offered a lot of useful tools for us.
+A new Flutter project.
 
-### status
-developing, coming soon. please be hope    
+## Getting Started
 
-[![Build Status](https://travis-ci.com/houko/flutter-study-app.svg?branch=master)](https://travis-ci.com/houko/flutter-study-app)
-[![GitHub license](https://img.shields.io/badge/license-BSD--2--Clause-blue)](https://github.com/houko/flutter-study-app/blob/master/LICENSE)
-[![ios app](https://img.shields.io/badge/ios-app-brightgreen)](https://houko.github.io/flutter-study-app/)
-[![android app](https://img.shields.io/badge/android-app-green)](https://houko.github.io/flutter-study-app/)  
+This project is a starting point for a Flutter application.
 
-### Quick show
-:rocket:
-there will put a gif or video about this app while app developed
+A few resources to get you started if this is your first Flutter project:
 
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-
-### Preview
-:rocket:
-there will put some screen shots about this app while app developed
-
-
-### More
-detail description please visit [document](https://flutterstudy.xiaomo.info)
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
