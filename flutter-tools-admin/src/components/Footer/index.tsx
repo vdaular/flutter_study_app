@@ -21,12 +21,12 @@ function Footer() {
 				>
 					<Box>
 						<Typography variant="subtitle1">
-							&copy; 2021 - Tokyo Free White React Admin Dashboard
+							&copy; 2021 - Flutter Tools React Admin Dashboard
 						</Typography>
 					</Box>
 					<Typography sx={{pt: {xs: 2, md: 0}}} variant="subtitle1">
-						Crafted by <Link href="https://bloomui.com" target="_blank"
-										 rel="noopener noreferrer">BloomUI.com</Link>
+						Created by <Link href="https://tools.xiaomo.info" target="_blank"
+										 rel="noopener noreferrer">tools.xiaomo.info</Link>
 					</Typography>
 				</Box>
 			</Container>

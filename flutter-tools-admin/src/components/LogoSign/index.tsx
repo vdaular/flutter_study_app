@@ -73,7 +73,7 @@ const LogoSignInner = styled(Box)(
 function Logo() {
 
 	return (
-		<Tooltip title="Tokyo Free White React Admin Dashboard" arrow>
+		<Tooltip title="Flutter Tools React Admin Dashboard" arrow>
 			<LogoWrapper to="/dashboard">
 				<LogoSignWrapper>
 					<LogoSign>
