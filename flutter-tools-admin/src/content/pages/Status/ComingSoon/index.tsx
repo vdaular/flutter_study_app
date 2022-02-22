@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import comingSoon from '@/assets/images/status/coming-soon.svg';
+import comingSoon from '@/src/assets/images/status/coming-soon.svg';
 import {
 	Box,
 	Typography,
