@@ -14,6 +14,10 @@ import Text from '@/components/Text';
 import Label from '@/components/Label';
 import WatchListRowChart from './WatchListRowChart';
 
+import ethereum from '@/assets/images/placeholders/logo/ethereum.png';
+import cardano from '@/assets/images/placeholders/logo/cardano.png';
+import bitcoin from '@/assets/images/placeholders/logo/bitcoin.png';
+
 const AvatarWrapper = styled(Avatar)(
 	({theme}) => `
         background: transparent;
@@ -66,7 +70,7 @@ function WatchListRow() {
 							<AvatarWrapper>
 								<img
 									alt="BTC"
-									src="/src/assets/images/placeholders/logo/bitcoin.png"
+									src={bitcoin}
 								/>
 							</AvatarWrapper>
 							<Box>
@@ -111,7 +115,7 @@ function WatchListRow() {
 							<AvatarWrapper>
 								<img
 									alt="ETH"
-									src="/src/assets/images/placeholders/logo/ethereum.png"
+									src={ethereum}
 								/>
 							</AvatarWrapper>
 							<Box>
@@ -156,7 +160,7 @@ function WatchListRow() {
 							<AvatarWrapper>
 								<img
 									alt="ADA"
-									src="/src/assets/images/placeholders/logo/cardano.png"
+									src={cardano}
 								/>
 							</AvatarWrapper>
 							<Box>

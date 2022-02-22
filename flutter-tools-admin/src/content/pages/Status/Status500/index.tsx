@@ -13,6 +13,8 @@ import LoadingButton from '@mui/lab/LoadingButton';
 
 import { styled } from '@mui/material/styles';
 
+import error from '@/assets/images/status/500.svg'
+
 const GridWrapper = styled(Grid)(
 	({theme}) => `
     background: ${theme.colors.gradients.black1};
@@ -76,7 +78,7 @@ function Status500() {
 								<img
 									alt="500"
 									height={260}
-									src="/src/assets/images/status/500.svg"
+									src={error}
 								/>
 								<Typography variant="h2" sx={{my: 2}}>
 									There was an error, please try again later

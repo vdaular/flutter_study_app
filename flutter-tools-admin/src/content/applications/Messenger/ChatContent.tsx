@@ -9,6 +9,8 @@ import {
 	subMinutes
 } from 'date-fns';
 import ScheduleTwoToneIcon from '@mui/icons-material/ScheduleTwoTone';
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
 
 const DividerWrapper = styled(Divider)(
 	({theme}) => `
@@ -46,13 +48,6 @@ const CardWrapperSecondary = styled(Card)(
 );
 
 function ChatContent() {
-
-	const user =
-		{
-			name: 'Catherine Pike',
-			avatar: '/src/assets/images/avatars/1.jpg'
-		};
-
 	return (
 		<Box p={3}>
 			<DividerWrapper>
@@ -69,7 +64,7 @@ function ChatContent() {
 					variant="rounded"
 					sx={{width: 50, height: 50}}
 					alt="Zain Baptista"
-					src="/src/assets/images/avatars/2.jpg"
+					src={UserAvatar}
 				/>
 				<Box
 					display="flex"
@@ -123,8 +118,8 @@ function ChatContent() {
 				<Avatar
 					variant="rounded"
 					sx={{width: 50, height: 50}}
-					alt={user.name}
-					src={user.avatar}
+					alt={'Catherine Pike'}
+					src={UserAvatar}
 				/>
 			</Box>
 			<DividerWrapper>
@@ -161,8 +156,8 @@ function ChatContent() {
 				<Avatar
 					variant="rounded"
 					sx={{width: 50, height: 50}}
-					alt={user.name}
-					src={user.avatar}
+					alt={'Catherine Pike'}
+					src={UserAvatar}
 				/>
 			</Box>
 			<DividerWrapper>Today</DividerWrapper>
@@ -176,7 +171,7 @@ function ChatContent() {
 					variant="rounded"
 					sx={{width: 50, height: 50}}
 					alt="Zain Baptista"
-					src="/src/assets/images/avatars/2.jpg"
+					src={UserAvatar}
 				/>
 				<Box
 					display="flex"
@@ -233,8 +228,8 @@ function ChatContent() {
 				<Avatar
 					variant="rounded"
 					sx={{width: 50, height: 50}}
-					alt={user.name}
-					src={user.avatar}
+					alt={'Catherine Pike'}
+					src={UserAvatar}
 				/>
 			</Box>
 		</Box>

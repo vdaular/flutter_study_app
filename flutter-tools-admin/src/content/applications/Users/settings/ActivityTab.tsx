@@ -18,6 +18,8 @@ import ThumbUpAltTwoToneIcon from '@mui/icons-material/ThumbUpAltTwoTone';
 import CommentTwoToneIcon from '@mui/icons-material/CommentTwoTone';
 import ShareTwoToneIcon from '@mui/icons-material/ShareTwoTone';
 import Text from '@/components/Text';
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
 
 const CardActionsWrapper = styled(CardActions)(
 	({theme}) => `
@@ -32,7 +34,7 @@ function ActivityTab() {
 	return (
 		<Card>
 			<CardHeader
-				avatar={<Avatar src="/src/assets/images/avatars/5.jpg"/>}
+				avatar={<Avatar src={UserAvatar}/>}
 				action={
 					<IconButton color="primary">
 						<MoreHorizTwoToneIcon fontSize="medium"/>

@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import Label from '@/components/Label';
 import Text from '@/components/Text';
 import WatchListColumn1Chart from './WatchListColumn1Chart';
+import ethereum from '@/assets/images/placeholders/logo/ethereum.png';
 
 const AvatarWrapper = styled(Avatar)(
 	({theme}) => `
@@ -42,7 +43,7 @@ function WatchListColumn2() {
 					<AvatarWrapper>
 						<img
 							alt="ETH"
-							src="/src/assets/images/placeholders/logo/ethereum.png"
+							src={ethereum}
 						/>
 					</AvatarWrapper>
 					<Box>

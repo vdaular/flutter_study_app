@@ -13,6 +13,7 @@ import {
 import { styled } from '@mui/material/styles';
 import AttachFileTwoToneIcon from '@mui/icons-material/AttachFileTwoTone';
 import SendTwoToneIcon from '@mui/icons-material/SendTwoTone';
+import UserAvatar from '@/assets/images/avatars/1.jpg';
 
 const DividerWrapper = styled(Divider)(
 	({theme}) => `
@@ -27,17 +28,10 @@ const Input = styled('input')({
 });
 
 function BottomBarContent() {
-
-	const user =
-		{
-			name: 'Catherine Pike',
-			avatar: '/src/assets/images/avatars/1.jpg'
-		};
-
 	return (
 		<Card sx={{display: 'flex', alignItems: 'center', p: 2}}>
 			<Hidden mdDown>
-				<Avatar alt={user.name} src={user.avatar}/>
+				<Avatar alt={'Catherine Pike'} src={UserAvatar}/>
 				<DividerWrapper orientation="vertical" flexItem/>
 			</Hidden>
 			<Box sx={{flex: 1, mr: 2}}>

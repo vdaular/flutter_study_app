@@ -13,6 +13,7 @@ import { styled } from '@mui/material/styles';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import maintenance from '@/assets/images/status/maintenance.svg'
 
 const MainContent = styled(Box)(
 	() => `
@@ -53,7 +54,7 @@ function StatusMaintenance() {
 						<img
 							alt="Maintenance"
 							height={250}
-							src="/src/assets/images/status/maintenance.svg"
+							src={maintenance}
 						/>
 					</Box>
 					<Divider sx={{my: 4}}/>

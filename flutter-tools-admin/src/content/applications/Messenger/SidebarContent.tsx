@@ -28,6 +28,7 @@ import Label from '@/components/Label';
 import CheckTwoToneIcon from '@mui/icons-material/CheckTwoTone';
 import AlarmTwoToneIcon from '@mui/icons-material/AlarmTwoTone';
 import { Link as RouterLink } from 'react-router-dom';
+import UserAvatar from '@/assets/images/avatars/2.jpg';
 
 const AvatarSuccess = styled(Avatar)(
 	({theme}) => `
@@ -97,7 +98,6 @@ function SidebarContent() {
 	const user =
 		{
 			name: 'Catherine Pike',
-			avatar: '/src/assets/images/avatars/1.jpg',
 			jobtitle: 'Software Developer'
 		};
 
@@ -127,7 +127,7 @@ function SidebarContent() {
 	return (
 		<RootWrapper>
 			<Box display="flex" alignItems="flex-start">
-				<Avatar alt={user.name} src={user.avatar}/>
+				<Avatar alt={user.name} src={UserAvatar}/>
 				<Box sx={{ml: 1.5, flex: 1}}>
 					<Box
 						display="flex"
@@ -199,7 +199,7 @@ function SidebarContent() {
 					<List disablePadding component="div">
 						<ListItemWrapper selected>
 							<ListItemAvatar>
-								<Avatar src="/src/assets/images/avatars/1.jpg"/>
+								<Avatar src={UserAvatar}/>
 							</ListItemAvatar>
 							<ListItemText
 								sx={{mr: 1}}
@@ -221,7 +221,7 @@ function SidebarContent() {
 						</ListItemWrapper>
 						<ListItemWrapper>
 							<ListItemAvatar>
-								<Avatar src="/src/assets/images/avatars/2.jpg"/>
+								<Avatar src={UserAvatar}/>
 							</ListItemAvatar>
 							<ListItemText
 								sx={{mr: 1}}
@@ -240,7 +240,7 @@ function SidebarContent() {
 						</ListItemWrapper>
 						<ListItemWrapper>
 							<ListItemAvatar>
-								<Avatar src="/src/assets/images/avatars/1.jpg"/>
+								<Avatar src={UserAvatar}/>
 							</ListItemAvatar>
 							<ListItemText
 								sx={{mr: 1}}
@@ -259,7 +259,7 @@ function SidebarContent() {
 						</ListItemWrapper>
 						<ListItemWrapper>
 							<ListItemAvatar>
-								<Avatar src="/src/assets/images/avatars/4.jpg"/>
+								<Avatar src={UserAvatar}/>
 							</ListItemAvatar>
 							<ListItemText
 								sx={{mr: 1}}
@@ -285,7 +285,7 @@ function SidebarContent() {
 					<List disablePadding component="div">
 						<ListItemWrapper>
 							<ListItemAvatar>
-								<Avatar src="/src/assets/images/avatars/1.jpg"/>
+								<Avatar src={UserAvatar}/>
 							</ListItemAvatar>
 							<ListItemText
 								sx={{mr: 1}}
@@ -307,7 +307,7 @@ function SidebarContent() {
 						</ListItemWrapper>
 						<ListItemWrapper>
 							<ListItemAvatar>
-								<Avatar src="/src/assets/images/avatars/4.jpg"/>
+								<Avatar src={UserAvatar}/>
 							</ListItemAvatar>
 							<ListItemText
 								sx={{mr: 1}}
@@ -378,7 +378,7 @@ function SidebarContent() {
 								component={RouterLink}
 								to="#"
 								alt="Remy Sharp"
-								src="/src/assets/images/avatars/1.jpg"
+								src={UserAvatar}
 							/>
 						</Tooltip>
 						<Tooltip arrow title="View profile for Travis Howard">
@@ -387,7 +387,7 @@ function SidebarContent() {
 								component={RouterLink}
 								to="#"
 								alt="Travis Howard"
-								src="/src/assets/images/avatars/2.jpg"
+								src={UserAvatar}
 							/>
 						</Tooltip>
 						<Tooltip arrow title="View profile for Craig Vaccaro">
@@ -396,7 +396,7 @@ function SidebarContent() {
 								component={RouterLink}
 								to="#"
 								alt="Craig Vaccaro"
-								src="/src/assets/images/avatars/1.jpg"
+								src={UserAvatar}
 							/>
 						</Tooltip>
 					</AvatarGroup>
@@ -435,7 +435,7 @@ function SidebarContent() {
 								component={RouterLink}
 								to="#"
 								alt="Travis Howard"
-								src="/src/assets/images/avatars/4.jpg"
+								src={UserAvatar}
 							/>
 						</Tooltip>
 						<Tooltip arrow title="View profile for Craig Vaccaro">
@@ -444,7 +444,7 @@ function SidebarContent() {
 								component={RouterLink}
 								to="#"
 								alt="Craig Vaccaro"
-								src="/src/assets/images/avatars/5.jpg"
+								src={UserAvatar}
 							/>
 						</Tooltip>
 					</AvatarGroup>

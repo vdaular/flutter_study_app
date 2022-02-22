@@ -12,6 +12,7 @@ import {
 
 import { styled } from '@mui/material/styles';
 import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
+import BitCoin from '@/assets/images/placeholders/logo/bitcoin.png';
 
 const AvatarWrapper = styled(Avatar)(
 	({theme}) => `
@@ -80,7 +81,7 @@ function Wallets() {
 							<AvatarWrapper>
 								<img
 									alt="BTC"
-									src="/src/assets/images/placeholders/logo/bitcoin.png"
+									src={BitCoin}
 								/>
 							</AvatarWrapper>
 							<Typography variant="h5" noWrap>

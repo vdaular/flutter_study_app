@@ -21,6 +21,8 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+import cover from '@/assets/images/placeholders/covers/1.jpg';
+
 interface ExpandMoreProps extends IconButtonProps {
 	expand: boolean;
 }
@@ -127,7 +129,7 @@ function Cards() {
 											height: 0,
 											paddingTop: '56.25%', // 16:9
 										}}
-										image="/src/assets/images/placeholders/covers/1.jpg"
+										image={cover}
 										title="Paella dish"
 									/>
 									<CardContent>

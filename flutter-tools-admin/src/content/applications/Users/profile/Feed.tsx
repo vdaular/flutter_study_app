@@ -10,6 +10,8 @@ import {
 } from '@mui/material';
 
 import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
 
 function Feed() {
 
@@ -19,37 +21,31 @@ function Feed() {
 			name: 'Munroe Dacks',
 			jobtitle: 'Senior Cost Accountant',
 			company: 'Trudoo',
-			avatar: '/src/assets/images/avatars/1.jpg'
 		},
 		{
 			name: 'Gunilla Canario',
 			jobtitle: 'Associate Professor',
 			company: 'Buzzdog',
-			avatar: '/src/assets/images/avatars/2.jpg'
 		},
 		{
 			name: 'Rowena Geistmann',
 			jobtitle: 'Pharmacist',
 			company: 'Yozio',
-			avatar: '/src/assets/images/avatars/3.jpg'
 		},
 		{
 			name: 'Ede Stoving',
 			jobtitle: 'VP Product Management',
 			company: 'Cogibox',
-			avatar: '/src/assets/images/avatars/4.jpg'
 		},
 		{
 			name: 'Crissy Spere',
 			jobtitle: 'Social Worker',
 			company: 'Babbleblab',
-			avatar: '/src/assets/images/avatars/5.jpg'
 		},
 		{
 			name: 'Michel Greatbanks',
 			jobtitle: 'Research Assistant III',
 			company: 'Aimbu',
-			avatar: '/src/assets/images/avatars/5.jpg'
 		}
 	];
 
@@ -62,7 +58,7 @@ function Feed() {
 					{feed.map((_feed) => (
 						<Grid key={_feed.name} item xs={12} sm={6} lg={4}>
 							<Box p={3} display="flex" alignItems="flex-start">
-								<Avatar src={_feed.avatar}/>
+								<Avatar src={UserAvatar}/>
 								<Box pl={2}>
 									<Typography gutterBottom variant="subtitle2">
 										{_feed.company}

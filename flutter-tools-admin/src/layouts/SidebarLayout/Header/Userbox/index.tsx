@@ -23,6 +23,9 @@ import AccountBoxTwoToneIcon from '@mui/icons-material/AccountBoxTwoTone';
 import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
 import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone';
 
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
+
 const UserBoxButton = styled(Button)(
 	({theme}) => `
         padding-left: ${theme.spacing(1)};
@@ -63,7 +66,6 @@ function HeaderUserbox() {
 	const user =
 		{
 			name: 'Catherine Pike',
-			avatar: '/src/assets/images/avatars/1.jpg',
 			jobtitle: 'Project Manager'
 		};
 
@@ -81,7 +83,7 @@ function HeaderUserbox() {
 	return (
 		<>
 			<UserBoxButton color="secondary" ref={ref} onClick={handleOpen}>
-				<Avatar variant="rounded" alt={user.name} src={user.avatar}/>
+				<Avatar variant="rounded" alt={user.name} src={UserAvatar}/>
 				<Hidden mdDown>
 					<UserBoxText>
 						<UserBoxLabel variant="body1">{user.name}</UserBoxLabel>
@@ -108,7 +110,7 @@ function HeaderUserbox() {
 				}}
 			>
 				<MenuUserBox sx={{minWidth: 210}} display="flex">
-					<Avatar variant="rounded" alt={user.name} src={user.avatar}/>
+					<Avatar variant="rounded" alt={user.name} src={UserAvatar}/>
 					<UserBoxText>
 						<UserBoxLabel variant="body1">{user.name}</UserBoxLabel>
 						<UserBoxDescription variant="body2">

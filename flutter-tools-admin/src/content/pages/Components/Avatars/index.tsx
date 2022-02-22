@@ -9,6 +9,8 @@ import { deepOrange, deepPurple, green, pink } from '@mui/material/colors';
 import FolderIcon from '@mui/icons-material/Folder';
 import PageviewIcon from '@mui/icons-material/Pageview';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
 
 function stringToColor(string: string) {
 	let hash = 0;
@@ -65,9 +67,9 @@ function Avatars() {
 							<Divider/>
 							<CardContent>
 								<Stack direction="row" spacing={2}>
-									<Avatar alt="Remy Sharp" src="/src/assets/images/avatars/1.jpg"/>
-									<Avatar alt="Travis Howard" src="/src/assets/images/avatars/2.jpg"/>
-									<Avatar alt="Cindy Baker" src="/src/assets/images/avatars/3.jpg"/>
+									<Avatar alt="Remy Sharp" src={UserAvatar}/>
+									<Avatar alt="Travis Howard" src={UserAvatar}/>
+									<Avatar alt="Cindy Baker" src={UserAvatar}/>
 								</Stack>
 							</CardContent>
 						</Card>
@@ -99,13 +101,13 @@ function Avatars() {
 								<Stack direction="row" spacing={2}>
 									<Avatar
 										alt="Remy Sharp"
-										src="/src/assets/images/avatars/4.jpg"
+										src={UserAvatar}
 										sx={{width: 24, height: 24}}
 									/>
-									<Avatar alt="Remy Sharp" src="/src/assets/images/avatars/5.jpg"/>
+									<Avatar alt="Remy Sharp" src={UserAvatar}/>
 									<Avatar
 										alt="Remy Sharp"
-										src="/src/assets/images/avatars/3.jpg"
+										src={UserAvatar}
 										sx={{width: 56, height: 56}}
 									/>
 								</Stack>

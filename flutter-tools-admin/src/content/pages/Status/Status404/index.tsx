@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import { Helmet } from 'react-helmet-async';
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
+import notFound from '@/assets/images/status/404.svg';
 
 import { styled } from '@mui/material/styles';
 
@@ -48,7 +49,7 @@ function Status404() {
 			<MainContent>
 				<Container maxWidth="md">
 					<Box textAlign="center">
-						<img alt="404" height={180} src="/src/assets/images/status/404.svg"/>
+						<img alt="404" height={180} src={notFound}/>
 						<Typography variant="h2" sx={{my: 2}}>
 							The page you were looking for doesn't exist.
 						</Typography>

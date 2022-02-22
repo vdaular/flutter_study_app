@@ -1,12 +1,13 @@
 import { Typography, Avatar, Grid } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
 
 function PageHeader() {
 
 	const user =
 		{
 			name: 'Catherine Pike',
-			avatar: '/src/assets/images/avatars/1.jpg'
 		};
 	const theme = useTheme();
 
@@ -16,8 +17,8 @@ function PageHeader() {
 				<Avatar
 					sx={{mr: 2, width: theme.spacing(8), height: theme.spacing(8)}}
 					variant="rounded"
-					alt={user.name}
-					src={user.avatar}
+					alt="Catherine Pike"
+					src={UserAvatar}
 				/>
 			</Grid>
 			<Grid item>

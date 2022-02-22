@@ -28,3 +28,5 @@ yarn-error.log*
 *.js
 *.jsx
 *.map
+
+dist
