@@ -10,7 +10,7 @@ interface ChartProps {
 const AccountBalanceChart: FC<ChartProps> = ({data: dataProp, ...rest}) => {
 	const theme = useTheme();
 
-	const data = {
+	const data: any = {
 		datasets: dataProp.datasets.map((dataset: any) => ({
 			...dataset,
 			borderWidth: 10,
@@ -20,7 +20,7 @@ const AccountBalanceChart: FC<ChartProps> = ({data: dataProp, ...rest}) => {
 		labels: dataProp.labels
 	};
 
-	const options = {
+	const options: any = {
 		responsive: true,
 		maintainAspectRatio: false,
 		animation: false,

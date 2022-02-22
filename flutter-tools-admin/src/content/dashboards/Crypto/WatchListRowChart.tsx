@@ -15,7 +15,7 @@ const WatchListRowChart: FC<WatchListRowChartProps> = ({
 													   }) => {
 	const theme = useTheme();
 
-	const data = () => {
+	const data: any = () => {
 		return {
 			datasets: [
 				{
@@ -32,7 +32,7 @@ const WatchListRowChart: FC<WatchListRowChartProps> = ({
 		};
 	};
 
-	const options = {
+	const options: any = {
 		responsive: true,
 		maintainAspectRatio: false,
 		legend: {

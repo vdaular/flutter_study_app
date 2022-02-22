@@ -15,7 +15,7 @@ const WatchListColumn1Chart: FC<WatchListColumn1ChartProps> = ({
 															   }) => {
 	const theme = useTheme();
 
-	const data = (canvas: HTMLCanvasElement) => {
+	const data: any = (canvas: HTMLCanvasElement) => {
 		const ctx = canvas.getContext('2d');
 		const primaryGradient = ctx!.createLinearGradient(6, 6, 6, 150);
 
@@ -39,7 +39,7 @@ const WatchListColumn1Chart: FC<WatchListColumn1ChartProps> = ({
 		};
 	};
 
-	const options = {
+	const options: any = {
 		responsive: true,
 		maintainAspectRatio: false,
 		legend: {
