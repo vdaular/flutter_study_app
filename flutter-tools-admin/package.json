@@ -10,11 +10,6 @@
     "@mui/lab": "5.0.0-alpha.70",
     "@mui/material": "5.4.3",
     "@mui/styles": "5.4.2",
-    "@types/nprogress": "0.2.0",
-    "@types/react": "17.0.39",
-    "@types/react-dom": "17.0.11",
-    "@types/react-router-dom": "5.3.3",
-    "@vitejs/plugin-react": "^1.2.0",
     "chart.js": "2.9.4",
     "clsx": "1.1.1",
     "date-fns": "2.28.0",
@@ -31,7 +26,6 @@
     "react-router-dom": "6.2.1",
     "stylis": "4.0.13",
     "stylis-plugin-rtl": "2.1.1",
-    "vite": "^2.8.4",
     "web-vitals": "2.1.4"
   },
   "scripts": {
@@ -52,6 +46,8 @@
     ]
   },
   "devDependencies": {
+    "vite": "^2.8.4",
+    "@vitejs/plugin-react": "^1.2.0",
     "@tsconfig/node14": "^1.0.1",
     "@tsconfig/recommended": "^1.0.1",
     "@types/node": "^17.0.19",
@@ -59,6 +55,7 @@
     "@types/react": "17.0.39",
     "@types/react-dom": "17.0.11",
     "@types/react-router-dom": "5.3.3",
+    "@types/nprogress": "0.2.0",
     "@typescript-eslint/eslint-plugin": "5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "eslint": "8.9.0",
