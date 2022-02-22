@@ -74,7 +74,7 @@ function Logo() {
 
   return (
     <Tooltip title="Tokyo Free White React Admin Dashboard" arrow>
-      <LogoWrapper to="/overview">
+      <LogoWrapper to="/dashboard">
         <LogoSignWrapper>
           <LogoSign>
             <LogoSignInner />

@@ -31,27 +31,17 @@ export interface MenuItems {
 
 const menuItems: MenuItems[] = [
   {
-    heading: '',
-    items: [
-      {
-        name: 'Overview',
-        link: '/overview',
-        icon: DesignServicesTwoToneIcon
-      }
-    ]
-  },
-  {
-    heading: 'Dashboards',
+    heading: 'Dashboard',
     items: [
       {
         name: 'Crypto',
-        link: '/dashboards/crypto',
+        link: '/dashboard/crypto',
         icon: BrightnessLowTwoToneIcon
       },
       {
         name: 'Messenger',
         icon: MmsTwoToneIcon,
-        link: '/dashboards/messenger'
+        link: '/dashboard/messenger'
       },
     ]
   },

@@ -8,15 +8,15 @@ import { CssBaseline } from '@mui/material';
 
 const App = () => {
 
-  const content = useRoutes(routes);
+	const content = useRoutes(routes);
 
-  return (
-    <ThemeProvider>
-      <LocalizationProvider dateAdapter={AdapterDateFns}>
-        <CssBaseline />
-        {content}
-      </LocalizationProvider>
-    </ThemeProvider>
-  );
-}
+	return (
+		<ThemeProvider>
+			<LocalizationProvider dateAdapter={AdapterDateFns}>
+				<CssBaseline/>
+				{content}
+			</LocalizationProvider>
+		</ThemeProvider>
+	);
+};
 export default App;

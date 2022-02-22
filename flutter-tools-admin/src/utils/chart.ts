@@ -1,9 +1,12 @@
 // @ts-ignore-start
 import { Chart } from 'react-chartjs-2';
 
-function draw(this: { draw: () => void; }) {
-	const {ctx} = this._chart;
-	const vm = this._view;
+const _chart = Chart;
+const _view = Chart;
+
+function draw() {
+	const {ctx} = _chart;
+	const vm = _view;
 	let {borderWidth} = vm;
 
 	let left;
@@ -17,7 +20,7 @@ function draw(this: { draw: () => void; }) {
 
 	// If radius is less than 0 or is large enough to cause drawing errors a max
 	//      radius is imposed. If cornerRadius is not defined set it to 0.
-	let {cornerRadius} = this._chart.config.options;
+	let {cornerRadius} = _chart.config.options;
 	if (cornerRadius < 0) {
 		cornerRadius = 0;
 	}
