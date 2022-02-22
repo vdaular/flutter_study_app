@@ -30,6 +30,9 @@ import BlockTwoToneIcon from '@mui/icons-material/BlockTwoTone';
 import WarningTwoToneIcon from '@mui/icons-material/WarningTwoTone';
 import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
 
+import UserAvatar from '@/assets/images/avatars/1.jpg';
+
+
 const RootWrapper = styled(Box)(
 	({theme}) => `
         @media (min-width: ${theme.breakpoints.values.md}px) {
